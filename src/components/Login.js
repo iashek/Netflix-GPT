@@ -42,19 +42,17 @@ const Login = () => {
                         displayName: name.current.value, photoURL: "https://avatars.githubusercontent.com/u/57562968?v=4"
                       }).then(() => {
                         // Profile updated!
+                        const {uid, email, displayName, photoURL} = auth.currentUser;
+                        dispatch(addUser({uid: uid, email: email, displayName: displayName, photoURL: photoURL}));
                         navigate("/browse");
                       }).catch((error) => {
                         // An error occurred
                         setErrorMessage(error.message);
                       });
-                    
-                      
-                    const {uid, email, displayName, photoURL} = auth.currentUser;
-                    dispatch(addUser({uid: uid, email: email, displayName: displayName, photoURL: photoURL}));
 
                     console.log(user);
                     console.log(auth.currentUser);
-                    navigate("/browse");
+                    // navigate("/browse");
                 })
                 .catch((error) => {
                     const errorCode = error.code;
