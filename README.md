@@ -27,6 +27,12 @@
 -   Fetch Data for Trailer Video Data
 -   Embedded the Youtube Video and make it autoplay and mute
 -   Tailwind Classes to make Main Container look awesome
+-   Built Secondary Component
+-   Built Movie List
+-   Built Movie Card
+-   TMDB Image CDN URL
+-   Made the Browse page look better with Tailwind CSS
+-   usePopularMovies Custom Hook
 
 #   Features
 -   Login/Sign Up
