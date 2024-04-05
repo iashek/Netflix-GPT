@@ -10,7 +10,7 @@ const MainContainer = () => {
     // "early return" used to avoid error when trying to access movies[0] which is not defined yet
     if (!movies) return;
 
-    const mainMovie = movies[0];
+    const mainMovie = movies[1];
     console.log(mainMovie)
 
     const {original_title, overview, id} = mainMovie;
