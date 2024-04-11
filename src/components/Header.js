@@ -14,7 +14,7 @@ const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const user = useSelector(store => store.user);
-  const showGptSearch = useSelector(store => store.gpt.showGptSearch)
+  const showGptSearch = useSelector(store => store.gpt.showGptSearch);
 
   const handleSignOut = () => {
     signOut(auth).then(() => {}).catch((error) => {
@@ -52,8 +52,7 @@ const Header = () => {
   }
 
   return (
-    // <div className="absolute px-8 py-2 w-screen bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
-    <div className="absolute px-8 py-2 w-screen bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
+    <div className="absolute px-8 py-2 w-[640px] sm:w-screen bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
         <img className="w-44 mx-auto md:mx-0" src={LOGO} alt="logo"/>
 
         {user &&
