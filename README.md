@@ -1,6 +1,6 @@
 ![image](https://github.com/iashek/Netflix-GPT/assets/57562968/229db551-2473-462d-8b10-cdd8a93a51fb)
 
-#   Netfflix GPT
+#   Netflix GPT
 -   Create React App
 -   Configured TailwindCSS
 -   Header
